@@ -6,6 +6,7 @@
 package main;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
@@ -57,6 +58,13 @@ public class Colecciones {
         System.out.println("-----------");
     
         // Sort the List
+		/* stringList.sort(new Comparator<String>() {
+			@Override
+			public int compare(String o1, String o2) {
+				return 0;
+			}
+		});
+        stringList.stream().sorted().forEach(System.out::println); */
         stringList.sort((a, b) -> {return a.compareTo(b);});
         stringList.forEach(s -> System.out.println(s));
         System.out.println("-----------");
@@ -92,12 +100,13 @@ public class Colecciones {
     public static void main(String[] args)
     {
         // Example Lists
-        exampleLists();
+//        exampleLists();
         
         // Almacen class example
-        exampleAlmacen();
+//        exampleAlmacen();
         
         // Example compareTo method
-        exampleAlumnos();
+//        exampleAlumnos();
+		System.out.println(123%10);
     }
 }
